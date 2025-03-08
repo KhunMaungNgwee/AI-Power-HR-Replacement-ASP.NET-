@@ -1,0 +1,2491 @@
+[
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "CheckAuth",
+    "RelativePath": "Api/Authentication/CheckAuth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "CheckTokenIsValid",
+    "RelativePath": "Api/Authentication/CheckTokenIsValid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "DeleteImage",
+    "RelativePath": "Api/Authentication/DeleteImage/{imageName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "Api/Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.UserLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "RegisterOwnerAccount",
+    "RelativePath": "Api/Authentication/RegisterOwnerAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MODEL.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "UploadFileDocument",
+    "RelativePath": "Api/Authentication/UploadFileDocument",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "UploadFileObj",
+    "RelativePath": "Api/Authentication/UploadFileObj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "UploadFileVdo",
+    "RelativePath": "Api/Authentication/UploadFileVdo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "UploadImage",
+    "RelativePath": "Api/Authentication/UploadImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AuthenticationController",
+    "Method": "UTCIssue",
+    "RelativePath": "Api/Authentication/UTCIssue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "CallOCRBankHouseRegistrationApi",
+    "RelativePath": "Api/BankGPT/CallOCRBankHouseRegistrationApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BankGPTID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "CallOCRLoanApplicationFormApi",
+    "RelativePath": "Api/BankGPT/CallOCRLoanApplicationFormApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BankGPTID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "CallOCRNationalIDCardApi",
+    "RelativePath": "Api/BankGPT/CallOCRNationalIDCardApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BankGPTID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "CallOCRSalarySlipApi",
+    "RelativePath": "Api/BankGPT/CallOCRSalarySlipApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BankGPTID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "GetProcessBankGPT",
+    "RelativePath": "Api/BankGPT/GetProcessBankGPT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BankGPTController",
+    "Method": "ProcessBankGPT",
+    "RelativePath": "Api/BankGPT/ProcessBankGPT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.ProcessBankGPTDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "AddCandidates",
+    "RelativePath": "Api/Candidate/AddCandidates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.AddCandidatesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "AddCandidatesReact",
+    "RelativePath": "Api/Candidate/AddCandidatesReact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.AddCandidatesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "AddInterviewComment",
+    "RelativePath": "Api/Candidate/AddInterviewComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddInterviewCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "CreateEmptyCandidate",
+    "RelativePath": "Api/Candidate/CreateEmptyCandidate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "DeleteCandidateByID",
+    "RelativePath": "Api/Candidate/DeleteCandidateByID/{candidateID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetAllOnboardApplicantsInformation",
+    "RelativePath": "Api/Candidate/GetAllOnboardApplicantsInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetAllOnboardCandidates",
+    "RelativePath": "Api/Candidate/GetAllOnboardCandidates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateByGuID",
+    "RelativePath": "Api/Candidate/GetCandidateByGuID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateByIDFromAdmin",
+    "RelativePath": "Api/Candidate/GetCandidateByIDFromAdmin/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateByInterviewID",
+    "RelativePath": "Api/Candidate/GetCandidateByInterviewID/{interviewID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "interviewID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateFromAdmin",
+    "RelativePath": "Api/Candidate/GetCandidateFromAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateHistory",
+    "RelativePath": "Api/Candidate/GetCandidateHistory/{CandidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidateInfoResultScore",
+    "RelativePath": "Api/Candidate/GetCandidateInfoResultScore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetCandidates",
+    "RelativePath": "Api/Candidate/GetCandidates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetDocumentReadyByCandidateIDV2",
+    "RelativePath": "Api/Candidate/GetDocumentReadyByCandidateIDV2/{candidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetInterviewCommentByCandidateID",
+    "RelativePath": "Api/Candidate/GetInterviewCommentByCandidateID/{CandidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetInterviewDetails",
+    "RelativePath": "Api/Candidate/GetInterviewDetails/{CandidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetInterviewVideoByCandidateID",
+    "RelativePath": "Api/Candidate/GetInterviewVideoByCandidateID/{CandidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "GetQuestions",
+    "RelativePath": "Api/Candidate/GetQuestions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "RejectSlotFromManager",
+    "RelativePath": "Api/Candidate/RejectSlotFromManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "SaveAudioResponseUrls",
+    "RelativePath": "Api/Candidate/SaveAudioResponseUrls",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "API.Controllers.SaveResponsesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "SaveDocumentUrls",
+    "RelativePath": "Api/Candidate/SaveDocumentUrls",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "API.Controllers.SaveDocumentsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateCandidateBackgroundCheck",
+    "RelativePath": "Api/Candidate/UpdateCandidateBackgroundCheck",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.UpdateBackgroundCheckDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateCandidateDocument",
+    "RelativePath": "Api/Candidate/UpdateCandidateDocument",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.UpdateCandidateDocumentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateCandidateFromInterview",
+    "RelativePath": "Api/Candidate/UpdateCandidateFromInterview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.UpdateCandidateFromInterviewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateContractEmploymentByCandidateID",
+    "RelativePath": "Api/Candidate/UpdateContractEmploymentByCandidateID",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.UpdateCandidateContractEmploymentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateF2FStatus",
+    "RelativePath": "Api/Candidate/UpdateF2FStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.UpdateF2FStatusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateF2FStatusSentLine",
+    "RelativePath": "Api/Candidate/UpdateF2FStatusSentLine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateRecruiterStatusByCandidateID",
+    "RelativePath": "Api/Candidate/UpdateRecruiterStatusByCandidateID/{candidateID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateStatusDocument",
+    "RelativePath": "Api/Candidate/UpdateStatusDocument/{CandidateID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateController",
+    "Method": "UpdateStatusInterview",
+    "RelativePath": "Api/Candidate/UpdateStatusInterview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.Candidates.UpdateStatusInterviewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CandidateInfoController",
+    "Method": "GetCandidateDocuments",
+    "RelativePath": "Api/CandidateInfo/GetCandidateDocuments/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckAndProcessByCandidateID",
+    "RelativePath": "Api/CandidateJob/CheckAndProcessByCandidateID",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckAndProcessByCandidatesList",
+    "RelativePath": "Api/CandidateJob/CheckAndProcessByCandidatesList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckAnswerByCandidateID",
+    "RelativePath": "Api/CandidateJob/CheckAnswerByCandidateID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckAnswerByCandidateList",
+    "RelativePath": "Api/CandidateJob/CheckAnswerByCandidateList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckCVScoreByCandidateID",
+    "RelativePath": "Api/CandidateJob/CheckCVScoreByCandidateID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckCVScoreByCandidateList",
+    "RelativePath": "Api/CandidateJob/CheckCVScoreByCandidateList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckScoreByCandidateID",
+    "RelativePath": "Api/CandidateJob/CheckScoreByCandidateID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "CheckScoreByCandidateList",
+    "RelativePath": "Api/CandidateJob/CheckScoreByCandidateList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "ConvertFromUrlToWav",
+    "RelativePath": "Api/CandidateJob/ConvertFromUrlToWav",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "ConvertToWav",
+    "RelativePath": "Api/CandidateJob/ConvertToWav",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "ConvertVideoToWavByCandidateID",
+    "RelativePath": "Api/CandidateJob/ConvertVideoToWavByCandidateID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "ConvertVideoToWavByCandidateList",
+    "RelativePath": "Api/CandidateJob/ConvertVideoToWavByCandidateList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "TriggerJob",
+    "RelativePath": "Api/CandidateJob/TriggerJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateJobController",
+    "Method": "TriggerJobForAllCandidate",
+    "RelativePath": "Api/CandidateJob/TriggerJobForAllCandidate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "CallOCRApi",
+    "RelativePath": "Api/CVData/CallOCRApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "GetCVData",
+    "RelativePath": "Api/CVData/GetCVData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "GetCVDataRaw",
+    "RelativePath": "Api/CVData/GetCVDataRawView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "GetCVDataRawV2",
+    "RelativePath": "Api/CVData/GetCVDataRawViewV2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "GetModelAI",
+    "RelativePath": "Api/CVData/GetModelAI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "GptFullSpeechPost",
+    "RelativePath": "Api/CVData/GptFullSpeechPost",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "UpdateCVDataRaw",
+    "RelativePath": "Api/CVData/UpdateCVDataRaw/{modelNum}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelNum",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "UpdateCVDataRawByCvId",
+    "RelativePath": "Api/CVData/UpdateCVDataRawByCvId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CvId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "UpdateCVDataRawByCvIdV2",
+    "RelativePath": "Api/CVData/UpdateCVDataRawByCvIdV2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CvId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CVDataController",
+    "Method": "UpdateCVDataRawV2",
+    "RelativePath": "Api/CVData/UpdateCVDataRawV2/{modelNum}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelNum",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HubListenerController",
+    "Method": "SendNotification",
+    "RelativePath": "Api/HubListener",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HubListenerController",
+    "Method": "CheckInventoryStock",
+    "RelativePath": "Api/HubListener/CheckInventoryStock/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HubListenerController",
+    "Method": "SendOrderNotificationToGroup",
+    "RelativePath": "Api/HubListener/SendOrderNotificationToGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "order",
+        "Type": "MODEL.DTOs.Order.OrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "AddEducationalQualification",
+    "RelativePath": "Api/IDCard/AddEducationalQualification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.Entities.EducationalQualifications",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "AddHouseRegistration",
+    "RelativePath": "Api/IDCard/AddHouseRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.Entities.HouseRegistrations",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "AddIDCard",
+    "RelativePath": "Api/IDCard/AddIDCard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.IDCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "CallOCREducationalQualificationApi",
+    "RelativePath": "Api/IDCard/CallOCREducationalQualificationApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.RequestOCRModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "CallOCRHouseRegistrationApi",
+    "RelativePath": "Api/IDCard/CallOCRHouseRegistrationApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.RequestOCRModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.IDCardController",
+    "Method": "CallOCRIDCardApi",
+    "RelativePath": "Api/IDCard/CallOCRIDCardApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.RequestOCRModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "AddInterviewHistory",
+    "RelativePath": "Api/Interview/AddInterviewHistory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewHistory.RequestInterviewHistoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "AddInterviewRound",
+    "RelativePath": "Api/Interview/AddInterviewRound",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddInterViewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllAgeRange",
+    "RelativePath": "Api/Interview/GetAllAgeRange",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllDepartmentRequest",
+    "RelativePath": "Api/Interview/GetAllDepartmentRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllEducationLevel",
+    "RelativePath": "Api/Interview/GetAllEducationLevel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllInterviewRound",
+    "RelativePath": "Api/Interview/GetAllInterviewRound",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllInterviewRoundApproved",
+    "RelativePath": "Api/Interview/GetAllInterviewRoundApproved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllJobPosition",
+    "RelativePath": "Api/Interview/GetAllJobPosition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetAllProvince",
+    "RelativePath": "Api/Interview/GetAllProvince",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetInterviewByID",
+    "RelativePath": "Api/Interview/GetInterviewByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "interviewID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetInterviewHistoryByCandidateID",
+    "RelativePath": "Api/Interview/GetInterviewHistoryByCandidateID/{candidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetInterviewSummary",
+    "RelativePath": "Api/Interview/GetInterviewSummary/{candidateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "GetQrBaseUrl",
+    "RelativePath": "Api/Interview/GetQrBaseUrl",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "OnboardingCandidatesByInterviewID",
+    "RelativePath": "Api/Interview/OnboardingCandidatesByInterviewID/{interviewID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "interviewID",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "UpdateInterviewRound",
+    "RelativePath": "Api/Interview/UpdateInterviewRound",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateInterViewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.InterviewController",
+    "Method": "UpdateInterviewRoundStatus",
+    "RelativePath": "Api/Interview/UpdateInterviewRoundStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateInterviewStatusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.LineController",
+    "Method": "Line_Process",
+    "RelativePath": "Api/Line/Line_Process",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "MODEL.DTOs.LineDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "AddLineInterviewSlot",
+    "RelativePath": "Api/Line2/AddLineInterviewSlot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "MODEL.DTOs.LineInterviewSlot.LineInterviewSlotDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "GetDivisionManagerJobPositionForLine",
+    "RelativePath": "Api/Line2/GetDivisionManagerJobPositionForLine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "GetLineInterviewSlotByUserId",
+    "RelativePath": "Api/Line2/GetLineInterviewSlotByUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "Line",
+    "RelativePath": "Api/Line2/Line",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "MODEL.DTOs.LineDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "TestLine",
+    "RelativePath": "Api/Line2/TestLine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "TestMailTemplate",
+    "RelativePath": "Api/Line2/TestMailTemplate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Line2Controller",
+    "Method": "UpdateLineInterviewSlotSelection",
+    "RelativePath": "Api/Line2/UpdateLineInterviewSlotSelection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.LineInterviewSlot.UpdateLineInterviewSlotDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.LogController",
+    "Method": "GetChatFrameLog",
+    "RelativePath": "Api/Log/GetChatFrameLog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.LogController",
+    "Method": "GetOCRLog",
+    "RelativePath": "Api/Log/GetOCRLog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "AddPO",
+    "RelativePath": "Api/PO/AddPO",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.PO.AddPODTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetCompanyMappingHistoryAll",
+    "RelativePath": "Api/PO/GetCompanyMappingHistoryAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetDimCustomerAll",
+    "RelativePath": "Api/PO/GetDimCustomerAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetMappingHistoryAll",
+    "RelativePath": "Api/PO/GetMappingHistoryAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetMaterialMaster",
+    "RelativePath": "Api/PO/GetMaterialMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetPOAll",
+    "RelativePath": "Api/PO/GetPOAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "GetPOByID",
+    "RelativePath": "Api/PO/GetPOByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "UpdateMappingHistory",
+    "RelativePath": "Api/PO/UpdateMappingHistory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.PO.UpdateMappingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "UpdatePO",
+    "RelativePath": "Api/PO/UpdatePO",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.PO.UpdatePODTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "UpdateProduct",
+    "RelativePath": "Api/PO/UpdateProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.PO.UpdateProductDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.POController",
+    "Method": "UpdateStatus",
+    "RelativePath": "Api/PO/UpdateStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "AddCVScoreModel",
+    "RelativePath": "Api/Position/AddCVScoreModel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddCVScoreModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "AddDepartmentRequest",
+    "RelativePath": "Api/Position/AddDepartmentRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddDepartmentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "AddDivisionManager",
+    "RelativePath": "Api/Position/AddDivisionManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddDivisionManagerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "AddJobPosition",
+    "RelativePath": "Api/Position/AddJobPosition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddJobPositionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "AddQuestionScoreModel",
+    "RelativePath": "Api/Position/AddQuestionScoreModel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.AddQuestionScoreModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetAllCVScoreModel",
+    "RelativePath": "Api/Position/GetAllCVScoreModel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetAllQuestionScoreModel",
+    "RelativePath": "Api/Position/GetAllQuestionScoreModel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetBasicQuestionByID",
+    "RelativePath": "Api/Position/GetBasicQuestionByID/{JobPositionID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobPositionID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetBasicQuestionByRefQrID",
+    "RelativePath": "Api/Position/GetBasicQuestionByRefQrID/{RefQrID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RefQrID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetCVScoreModelByGuid",
+    "RelativePath": "Api/Position/GetCVScoreModelByGuid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetDepartmentRequest",
+    "RelativePath": "Api/Position/GetDepartmentRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetDivisionManager",
+    "RelativePath": "Api/Position/GetDivisionManager",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetJobPosition",
+    "RelativePath": "Api/Position/GetJobPosition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetJobPositionByID",
+    "RelativePath": "Api/Position/GetJobPositionByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobPositionID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetMasterQuestionByID",
+    "RelativePath": "Api/Position/GetMasterQuestionByID/{JobPositionID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobPositionID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetPositionHO",
+    "RelativePath": "Api/Position/GetPositionHO",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetQuestionsByPositionID",
+    "RelativePath": "Api/Position/GetQuestionsByPositionID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobPositionID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "GetQuestionScoreModelByGuid",
+    "RelativePath": "Api/Position/GetQuestionScoreModelByGuid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateBasicQuestion",
+    "RelativePath": "Api/Position/UpdateBasicQuestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateBasicQuestionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateCVScoreModel",
+    "RelativePath": "Api/Position/UpdateCVScoreModel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateCVScoreModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateDepartmentRequest",
+    "RelativePath": "Api/Position/UpdateDepartmentRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateDepartmentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateDivisionManager",
+    "RelativePath": "Api/Position/UpdateDivisionManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateDivisionManagerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateJobPosition",
+    "RelativePath": "Api/Position/UpdateJobPosition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateJobPositionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateMasterQuestion",
+    "RelativePath": "Api/Position/UpdateMasterQuestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateQuestionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PositionController",
+    "Method": "UpdateQuestionScoreModel",
+    "RelativePath": "Api/Position/UpdateQuestionScoreModel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.InterviewRound.UpdateQuestionScoreModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ReportController",
+    "Method": "GetCandidateInfoResultScore",
+    "RelativePath": "Api/Report/GetCandidateInfoResultScore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CandidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.TestController",
+    "Method": "TestSpeechLink",
+    "RelativePath": "Api/Test/TestSpeechLink",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.TestController",
+    "Method": "TextFromWav",
+    "RelativePath": "Api/Test/TextFromWav",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "AddContractEmployment",
+    "RelativePath": "Api/UploadInto/AddContractEmployment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.AddContractEmploymentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "AddDocumentUpload",
+    "RelativePath": "Api/UploadInto/AddDocumentUpload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.AddDocumentUploadDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "AddHealthCheckup",
+    "RelativePath": "Api/UploadInto/AddHealthCheckup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.AddHealthCheckupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "ApprovedHealthCheckUp",
+    "RelativePath": "Api/UploadInto/ApprovedHealthCheckUp/{healthCheckUpID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "healthCheckUpID",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "GetAllMasterDocumentList",
+    "RelativePath": "Api/UploadInto/GetAllMasterDocumentList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "GetContractEmploymentByID",
+    "RelativePath": "Api/UploadInto/GetContractEmploymentByID/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "GetDocumentUploadByID",
+    "RelativePath": "Api/UploadInto/GetDocumentUploadByID/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "GetHealthCheckupByID",
+    "RelativePath": "Api/UploadInto/GetHealthCheckupByID/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "GetUploadIntoByID",
+    "RelativePath": "Api/UploadInto/GetUploadIntoByID/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "UpdateContractEmployment",
+    "RelativePath": "Api/UploadInto/UpdateContractEmployment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.UpdateContractEmploymentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "UpdateDocumentUpload",
+    "RelativePath": "Api/UploadInto/UpdateDocumentUpload",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.UpdateDocumentUploadDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UploadIntoController",
+    "Method": "UpdateHealthCheckup",
+    "RelativePath": "Api/UploadInto/UpdateHealthCheckup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputModel",
+        "Type": "MODEL.DTOs.Candidates.UpdateHealthCheckupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "Api/User/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "Api/User/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "MODEL.DTOs.ChangePasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "CheckAuth",
+    "RelativePath": "Api/User/CheckUserLevel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "Api/User/DeleteEmployee",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MODEL.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "Api/User/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "GetAllUserRole",
+    "RelativePath": "Api/User/GetAllUserRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "Api/User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "GetUserByGuid",
+    "RelativePath": "Api/User/GetUserByGuid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "PasswordResetRequestAdmin",
+    "RelativePath": "Api/User/PasswordResetRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "TestEmail",
+    "RelativePath": "Api/User/TestEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "Api/User/UpdateEmployee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "MODEL.DTOs.UserUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MODEL.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "Api/User/UpdateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MODEL.DTOs.UserUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
